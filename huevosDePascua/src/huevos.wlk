@@ -1,25 +1,28 @@
 object huevoReposteria{
 	var cantidad = 1
 	var listaTipo = [chocolateBlanco.tipo()]
-	var calorias = 0
-	method cantdad(){
+	var calorias = 750
+	method cantidad(){
 		return cantidad
+		
+		//return 750
 	}
 	method hechoDe(){
 		return listaTipo
 	}
 	method caloriasQueAporta(){
-		calorias = 750
+		return calorias
 	}
-	method caloriasChocolateBlanco(cantidadHuevos){
+	method caloriasChocolateBlanco(){
 		return calorias
 	}
 	method esComestible(persona){
 		return persona.leGusta(self)
 	}
 	method esAmargo(){
-		return listaTipo.any({tipo => tipo == "amargo"})
+		return false
 	}
+	
 }
 
 object huevoKinder {
@@ -186,7 +189,7 @@ object ana {
 
 
 method encontrar(listaHuevos){
-	lista += listaHuevos
+	lista.addAll(listaHuevos)
 }
 method huevosEncontrados(){
 	return lista
@@ -225,7 +228,7 @@ object jose{
 
 
 method encontrar(listaHuevos){
-	lista += listaHuevos
+	lista.addAll(listaHuevos)
 }
 method huevosEncontrados(){
 	return lista
@@ -265,7 +268,7 @@ object tito{
 
 
 method encontrar(listaHuevos){
-	lista += listaHuevos
+	lista.addAll(listaHuevos)
 }
 method huevosEncontrados(){
 	return lista

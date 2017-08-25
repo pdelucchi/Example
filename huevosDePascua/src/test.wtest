@@ -1,0 +1,29 @@
+import huevos.*
+
+describe "Tests del Ejercicio Huevos de Pascua"{
+	
+	test "A Ana no le gusta el conejo de chocolate "{
+		
+		assert.notThat(ana.leGusta(conejoChocolate))
+	}
+
+	test "Jose come uno amargo y esta enfermo"{
+		jose.encontrar([conejoChocolate])
+		jose.comerHuevos()
+		assert.notThat(jose.seVaAEnfermar())
+	}
+	test "Jose come uno amargo y uno blanco y no esta enfermo"{
+	jose.encontrar([conejoChocolate,huevoReposteria])
+	jose.comerHuevos()
+	assert.notThat(jose.seVaAEnfermar())
+	}
+	
+	/*test "Al inicio faltan encontrar 2 huevos"{
+		assert.equals(2,juego.cuantosFaltan())
+	}
+	* test "tito nunca se enferma"{
+	* self.titpoComerTodo()
+	* assert.notThat(tito.enfermo())*/
+	test "Faltan 5 huevos al iniciar la busqueda"
+	
+	}
